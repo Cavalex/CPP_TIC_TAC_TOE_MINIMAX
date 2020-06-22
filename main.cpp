@@ -91,6 +91,7 @@ void playerMove(){
 }
 
 int minimax(char board[9], int depth, bool maximizingPlayer){
+	// I had to copy the board because it was not working otherwise
 	minmaxSearches += 1;
 	char position[9];
 	for(int i = 0; i < 9; i++){
